@@ -32,11 +32,12 @@ const countries = [
   { name: "Pak", value: "PK", cities: ["Lahore", "Karachi"] },
   { name: "Bangladesh", value: "BG", cities: ["Dhaka", "Chittagong"] }
 ];
-const [country, setCountry] = useState([]);
-
+const [country, setCountry] = useState(0);
+  
 useEffect(() => {
   console.log(country[0]);
   console.log(country[1]);
+  
 }, [country]);
 
   return (
